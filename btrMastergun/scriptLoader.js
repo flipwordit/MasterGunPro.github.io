@@ -3,6 +3,7 @@ var loadScriptsDict = {
 		"/butts" : [['cartConfig.js', 'validation.js', 'grip.js'], []],
 		"/model_" : [['cartConfig.js', 'modelPriceUpdate.js', 'modelSelect.js'], []],
 		"/selectcolor" : [['cartConfig.js', 'imgConfig.js', 'urlConfig.js', 'color.js'], []],
+		"/page4595906" : [['cartConfig.js', 'imgConfig.js', 'urlConfig.js', 'color.js'], []],
 		"/accessory" : [['cartConfig.js', 'imgConfig.js', 'validation.js', 'urlConfig.js', 'additionals.js'], []]
 	};
 
