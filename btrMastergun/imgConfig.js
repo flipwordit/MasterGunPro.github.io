@@ -11,7 +11,7 @@ var dinamicUrl = function(photoName){
 		baseUrl='http';
 	}
 	
-	baseUrl += '://i96200l7.beget.tech/modelPhotos/';
+	baseUrl += '://MasterGunPro.github.io/modelPhotos/';
 	
 	return url = baseUrl + photoName + '.png';
 }
