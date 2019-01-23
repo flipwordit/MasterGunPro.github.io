@@ -4,14 +4,6 @@ $('.t-submit').click(
 			var products =  window.tcart.products;
 			var prodPref = [];
 			
-			var riple = getProductBySkuPrefix ('R');
-			var model = getProductBySkuPrefix ('MG');
-			var color = getProductBySkuPrefix ('C');
-			
-			var productFromAmo = riple[0].name + " " + model[0].name + " " + color[0].name;
-			
-			$("input[name='productNames']").val(productFromAmo);
-			
 			for (i=0; i<products.length; i ++)
 			{
 				prodPref[i] = getPrefix(products[i].sku);
@@ -43,6 +35,14 @@ $('.t-submit').click(
 				
 				return false;
 			}
+			
+			var riple = getProductBySkuPrefix ('R');
+			var model = getProductBySkuPrefix ('MG');
+			var color = getProductBySkuPrefix ('C');
+			
+			var productFromAmo = riple[0].name + " " + model[0].name + " " + color[0].name;
+			
+			$("input[name='productNames']").val(productFromAmo);
 	});	
  
  function getErrorMessage(message) {
