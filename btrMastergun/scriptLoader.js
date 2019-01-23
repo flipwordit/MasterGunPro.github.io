@@ -1,8 +1,8 @@
 var loadScriptsDict = {
 		"/configurator" : [['cartConfig.js', 'urlConfig.js', 'weapon.js'], ['configurator.css']],
 		"/butts" : [['cartConfig.js', 'validation.js', 'grip.js'], []],
-		"/model_" : [['cartConfig.js', 'modelPriceUpdate.js', 'modelSelect.js'], []],
-		"/selectcolor" : [['cartConfig.js', 'imgConfig.js', 'urlConfig.js', 'color.js'], []],
+		"/model_" : [['cartConfig.js', 'validation.js', 'modelPriceUpdate.js', 'modelSelect.js'], []],
+		"/selectcolor" : [['cartConfig.js', 'validation.js', 'imgConfig.js', 'urlConfig.js', 'color.js'], []],
 		"/accessory" : [['cartConfig.js', 'imgConfig.js', 'validation.js', 'urlConfig.js', 'additionals.js'], []]
 	};
 
