@@ -84,4 +84,7 @@ $(document).ready(function(){
 	var loadingScripts = getLoadingScripts();
 	
 	loadAll(loadingScripts);
+	
+	//скрытие поля в форме
+	$("input[name='productNames']").hide(); 
 });
