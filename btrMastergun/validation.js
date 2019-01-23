@@ -4,7 +4,11 @@ $('.t-submit').click(
 			var products =  window.tcart.products;
 			var prodPref = [];
 			
-			var productFromAmo = products[0].name;
+			var riple = getProductBySkuPrefix ('R');
+			var model = getProductBySkuPrefix ('MG');
+			var color = getProductBySkuPrefix ('C');
+			
+			var productFromAmo = riple + " " + model + " " + color;
 			
 			$("input[name='productNames']").val(productFromAmo);
 			
