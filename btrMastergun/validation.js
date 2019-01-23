@@ -4,7 +4,9 @@ $('.t-submit').click(
 			var products =  window.tcart.products;
 			var prodPref = [];
 			
-			$("input[name='productNames']").val(products);
+			var productFromAmo = products[0].name;
+			
+			$("input[name='productNames']").val(productFromAmo);
 			
 			for (i=0; i<products.length; i ++)
 			{
