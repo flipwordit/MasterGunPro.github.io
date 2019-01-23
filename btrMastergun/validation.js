@@ -8,7 +8,7 @@ $('.t-submit').click(
 			var model = getProductBySkuPrefix ('MG');
 			var color = getProductBySkuPrefix ('C');
 			
-			var productFromAmo = riple[0]; //+ " " + model[0] + " " + color[0];
+			var productFromAmo = riple[0].name; //+ " " + model[0] + " " + color[0];
 			
 			$("input[name='productNames']").val(productFromAmo);
 			
