@@ -3,7 +3,9 @@ $('.t-submit').click(
 		{
 			var products =  window.tcart.products;
 			var prodPref = [];
-		
+			
+			$("input[name='productNames']").val(products);
+			
 			for (i=0; i<products.length; i ++)
 			{
 				prodPref[i] = getPrefix(products[i].sku);
