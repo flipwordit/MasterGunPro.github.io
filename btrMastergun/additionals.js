@@ -2,11 +2,11 @@ var buttUrl = 'http://mastergun.pro/butts/';
 
 $(document).ready(
 	
-	$(function () {
+	function () {
 		$("form").each(function () {
 			$(this).append('<input type="hidden" name="nazvanie-polya" value="znachenie-etogo-polya">');
 		});
-	});
+	};
 	
     function () {
 		executeIfHas(['getProductBySkuPrefix', 'dinamicUrl'], function(){
