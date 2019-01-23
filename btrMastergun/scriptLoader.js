@@ -1,5 +1,5 @@
 var loadScriptsDict = {
-		"/configurator" : [['cartConfig.js', 'urlConfig.js', 'weapon.js'], ['configurator.css']],
+		"/configurator" : [['cartConfig.js', 'urlConfig.js', 'validation.js', 'weapon.js'], ['configurator.css']],
 		"/butts" : [['cartConfig.js', 'validation.js', 'grip.js'], []],
 		"/model_" : [['cartConfig.js', 'validation.js', 'modelPriceUpdate.js', 'modelSelect.js'], []],
 		"/selectcolor" : [['cartConfig.js', 'validation.js', 'imgConfig.js', 'urlConfig.js', 'color.js'], []],
