@@ -37,7 +37,7 @@ $(document).ready(
 						var fotoDiv=$('#rec81459814').find('.t-img');
 						
 						//TODO: избавиться от!!!
-						var baseUrl='http://support.nitrix-it.ru/download/MasterGun/modelPhoto/';
+						var baseUrl='https://MasterGunPro.github.io/modelPhotos/';
 						
 						var setImage=function()
 						{
