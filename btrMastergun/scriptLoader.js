@@ -24,7 +24,6 @@ var loadScripts = function(loadingScripts){
 		
 		var scriptAddr = btrScriptsBaseUrl + next_script;
 		
-		//$("head").append("<script type='text/javascript' src='" + scriptAddr +"'></script>");
 		$.ajax({
 			async: false,
 			url: scriptAddr,
