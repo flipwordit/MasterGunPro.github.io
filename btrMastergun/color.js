@@ -36,19 +36,13 @@ $(document).ready(
 						
 						var fotoDiv=$('#rec81459814').find('.t-img');
 						
-						//TODO: избавиться от!!!
-						var baseUrl='https://MasterGunPro.github.io/modelPhotos/';
-						
 						var setImage=function()
 						{
 							fotoDiv.attr('src',url);
 							fotoDiv.attr('data-original',url);
 							fotoDiv.attr('data-img-zoom-url',url);
-						//	fotoDiv.css('background-image', 'url("'+ url + '")');
-						//	fotoDiv.attr('data-original',url);
 						};
 						
-						//var url = dinamicUrl(rifle[0].sku+'_' + batt[0].sku);
 						var url = dinamicUrl(batt[0].sku+'_' +rifle[0].sku);
 						
 						var loadImage=function(url, success, error)
@@ -68,7 +62,7 @@ $(document).ready(
 								loadImage(url, setImage,
 									function()
 									{
-										url=baseUrl+defaultUrl;
+										url=dinamicUrl(defaultUrl);
 										setImage();
 									});
 							});	
