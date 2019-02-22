@@ -81,30 +81,17 @@ $(document).ready(
 
 							headerspan.text('Шаг 4. Выберите аксессуары к '+rifleName+' ' + batt[0].sku);
 							
-							//var url=dinamicUrl(rifle[0].sku+'_' + batt[0].sku+'_' + color[0].sku);
 							var url=dinamicUrl(batt[0].sku+'_' + color[0].sku +'_' +rifle[0].sku);
 							
 							var defaultUrl='NoPhoto';
 							
-							var fotoDiv=$('.t107').find('.t-img');
-							//$('#rec80920424').find('.t-cover__carrier');
-							
-							
+							var fotoDiv=$('.t107').find('.t-img');			
 							
 							var setImage=function()
 							{
 								fotoDiv.attr('src',url);
-							fotoDiv.attr('data-original',url);
-							fotoDiv.attr('data-img-zoom-url',url);
-							
-						//		setTimeout(100,
-						//	function(){
-								//$('#recorddiv79499544').css('background-image', 'url("'+ url + '")');
-						//		fotoDiv.css('background-image', 'url("'+ url + '")');
-						//		fotoDiv.attr('data-original',url);
-						//		fotoDiv.attr('data-content-cover-bg',url);
-						//	});
-								
+								fotoDiv.attr('data-original',url);
+								fotoDiv.attr('data-img-zoom-url',url);								
 							};
 							
 							var loadImage=function(url, success, error)
@@ -123,7 +110,6 @@ $(document).ready(
 									loadImage(url, setImage,
 										function()
 										{
-											//url=dinamicUrl(rifle[0].sku+'_' + batt[0].sku);
 											url=dinamicUrl(batt[0].sku+'_' +rifle[0].sku);
 											
 											loadImage(url, setImage,
