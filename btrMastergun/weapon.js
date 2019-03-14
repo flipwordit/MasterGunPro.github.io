@@ -20,7 +20,7 @@ $(document).ready(
 				return false;
 		});	
 		
-		executeIfHas(['setTcart__addProductProduct'],
+		executeIfHas(['setTcart__addProductProduct, tcart__addProduct'],
 		function(){
 			setTcart__addProductProduct(afterAddProductFunc);
 		});
