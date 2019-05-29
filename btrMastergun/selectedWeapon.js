@@ -2,16 +2,31 @@ var nextStepUrl = 'http://mastergun.pro/butts/';
 
 $(document).ready(
     function() {
+	    var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+	    
 		var afterAddProductFunc=function(product){
-			location.href = nextStepUrl+product.sku;
+			location.href = nextStepUrl+getUrlParameter('utm');
 		};
         
-		$('.t142__submit').click(
+		$('.t-btn_effects').click(
 			function()
 			{
 				 tcart__addProduct({
-						sku: 'R_0',
-						name: 'Другая марка оружия',
+						sku: getUrlParameter('utm'),
+						name: $($('#rec106966066 .t-title_sm')[0]).text(),
 						price:0,
 						amount:1
 						
