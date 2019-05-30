@@ -26,9 +26,15 @@ $(document).ready(
 			{
 				if(getUrlParameter('utm'))
 				{
+					var beginstr='Ложи и приклады на ';
+					var endstr='с пожизненной гарантией';
+					
+					var text=$($('.t-title_sm:visible')[0]).text();
+					
+					
 				 tcart__addProduct({
 						sku: getUrlParameter('utm'),
-						name: $($('.t-title_sm:visible')[0]).text(),
+						name: text.substring(beginstr.length, text.length-endstr.length),
 						price:0,
 						amount:1
 						
