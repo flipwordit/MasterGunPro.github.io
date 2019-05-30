@@ -24,15 +24,18 @@ $(document).ready(
 		$('.t-btn_effects').click(
 			function()
 			{
+				if(getUrlParameter('utm'))
+				{
 				 tcart__addProduct({
 						sku: getUrlParameter('utm'),
-						name: $($('#rec106966066 .t-title_sm')[0]).text(),
+						name: $($('.t-title_sm:visible')[0]).text(),
 						price:0,
 						amount:1
 						
 					});
 					
 				return false;
+				}
 		});	
 		
 		executeIfHas(['setTcart__addProductProduct', 'tcart__addProduct'],
