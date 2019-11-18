@@ -36,9 +36,10 @@ $(document).ready(
 			'КО-44',
 			'ВПО-223',
 			'КО-91/30',
-			'Соболь 22 lr'     
+			'Соболь 22 lr',
+		        'R_OH'
 		        ];
-			if(rifle.length&&bendingAvaibles(rifle[R_OH].name)==-1)
+			if(rifle.length&&bendingAvaibles(rifle[].name)==-1)
 			{		
 				$('.js-product')
 					.filter(function(){
