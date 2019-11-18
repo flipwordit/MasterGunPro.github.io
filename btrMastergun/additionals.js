@@ -37,7 +37,6 @@ $(document).ready(
 			'ВПО-223',
 			'КО-91/30',
 			'Соболь 22 lr',
-		        'Orsis Hunter'
 		        ];
 			if(rifle.length&&bendingAvaibles(rifle[].name)==-1)
 			{		
