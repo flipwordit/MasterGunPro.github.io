@@ -36,7 +36,8 @@ $(document).ready(
 			'КО-44',
 			'ВПО-223',
 			'КО-91/30',
-			'Соболь 22 lr'
+			'Соболь 22 lr',     
+		        'Mannlicher SSG 69'
 			];
 			if(rifle.length&&bendingAvaibles.indexOf(rifle[0].name)==-1)
 			{		
