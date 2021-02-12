@@ -6,7 +6,7 @@ var setTcart__addProductProduct = function(afterAddProductFunc) {
 
         tcart__addProduct = function (n) {
 
-            var currentPrefix = getPrefix(n.sku.trim());
+            var currentPrefix = getPrefix(n.sku);
             var removePredicate = function (a) {
                 return currentPrefix == getPrefix(a.sku);
             };
@@ -69,7 +69,7 @@ var getRifleName = function(rifle){
     if(rifle[0].sku&&rifle[0].sku.trim() === 'R_0'){
         return '';
     }
-    return rifle[0].name.trim();
+    return rifle[0].name?rifle[0].name.trim():rifle[0].name;
 }
 
 
