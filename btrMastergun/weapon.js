@@ -3,7 +3,7 @@ var nextStepUrl = 'http://mastergun.pro/butts/';
 $(document).ready(
     function() {
 		var afterAddProductFunc=function(product){
-			location.href = nextStepUrl+product.sku;
+			location.href = nextStepUrl+product.sku.trim();
 		};
         
 		$('.t142__submit').click(
