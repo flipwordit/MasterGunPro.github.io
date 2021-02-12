@@ -38,7 +38,7 @@ $(document).ready(
 			'КО-91/30',
 			'Соболь 22 lr',
 		        ];
-			if(rifle.length&&bendingAvaibles(rifle[0].name)==-1)
+			if(rifle.length&&bendingAvaibles.indexOf(rifle[0].name)==-1)
 			{		
 				$('.js-product')
 					.filter(function(){
