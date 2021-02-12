@@ -8,7 +8,7 @@ var setTcart__addProductProduct = function(afterAddProductFunc) {
 
             var currentPrefix = getPrefix(n.sku.trim());
             var removePredicate = function (a) {
-                return currentPrefix == getPrefix(a.sku.trim());
+                return currentPrefix == getPrefix(a.sku);
             };
 
             if (currentPrefix != null &&
@@ -47,7 +47,7 @@ var getPrefix = function(sku) {
 
     for (var i = 0; i < removePrefixes.length; i++) {
         if (sku.startsWith(removePrefixes[i]))
-            return removePrefixes[i];
+            return removePrefixes[i].trim();
     }
 
     return null;
@@ -66,7 +66,7 @@ var getProductBySkuPrefix = function(prefix) {
 
 var getRifleName = function(rifle){
 
-    if(rifle[0].sku.trim() === 'R_0'){
+    if(rifle[0].sku&&rifle[0].sku.trim() === 'R_0'){
         return '';
     }
     return rifle[0].name.trim();
