@@ -7,7 +7,7 @@ $(document).ready(
 			var rifle = getProductBySkuPrefix('R');
 			
 			if(rifle.length > 0){	 
-				$('a:contains("Ложе")').attr('href', buttUrl+rifle[0].sku);
+				$('a:contains("Ложе")').attr('href', buttUrl+rifle[0].sku.trim());
 			}
 			else{
 					$('.t758__wrapper').hide();
@@ -28,9 +28,9 @@ $(document).ready(
 					}
 					else
 					{
-						var rifleName = getRifleName(rifle);
+						var rifleName = getRifleName(rifle).trim();
 
-						headerspan.text('Шаг 3. Выберите цвет к '+rifleName+' ' + batt[0].sku);
+						headerspan.text('Шаг 3. Выберите цвет к '+rifleName+' ' + batt[0].sku.trim());
 						
 						var defaultUrl='NoPhoto.png';
 						
@@ -43,7 +43,7 @@ $(document).ready(
 							fotoDiv.attr('data-img-zoom-url',url);
 						};
 						
-						var url = dinamicUrl(batt[0].sku+'_' +rifle[0].sku);
+						var url = dinamicUrl(batt[0].sku.trim()+'_' +rifle[0].sku.trim());
 						
 						var loadImage=function(url, success, error)
 						{
@@ -57,7 +57,7 @@ $(document).ready(
 							function()
 							{
 					
-								url = dinamicUrl(batt[0].sku);
+								url = dinamicUrl(batt[0].sku.trim());
 								
 								loadImage(url, setImage,
 									function()
@@ -73,7 +73,7 @@ $(document).ready(
 			var afterAddProductFunc=function(product){
 				var batt=getProductBySkuPrefix('MG');
 				
-				location.href = nextStepUrl+batt[0].sku;
+				location.href = nextStepUrl+batt[0].sku.trim();
 			};
 			
 			setTcart__addProductProduct(afterAddProductFunc);
