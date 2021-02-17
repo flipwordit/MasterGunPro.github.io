@@ -7,7 +7,7 @@ $(document).ready(
 		executeIfHas(['getProductBySkuPrefix', 'setTcart__addProductProduct', 'getRifleName'],function(){
 			var rifle = getProductBySkuPrefix('R');
 			if(rifle && rifle.length){	 
-				$('a:contains("Ложе")').attr('href', buttUrl+rifle[0].sku);
+				$('a:contains("Ложе")').attr('href', buttUrl+rifle[0].sku.trim());
 			}
 			else{
 				$('a:contains("Ложе")').attr('href', '#');
@@ -33,7 +33,7 @@ $(document).ready(
 			});
 
 			if (rifle && rifle.length) {
-				var rifleName = getRifleName(rifle)
+				var rifleName = getRifleName(rifle).trim()
 				headerSpan.text('Шаг 2. Выберите ложе' +
 					(rifleName === '' ? '' : ' к ')
 					+ rifleName);
