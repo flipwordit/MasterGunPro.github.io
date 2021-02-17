@@ -11,7 +11,7 @@ $(document).ready(
 			
 			var rifle=getProductBySkuPrefix('R');
 			if(rifle.length > 0){	
-				$('a:contains("Ложе")').attr('href', buttUrl+rifle[0].sku);
+				$('a:contains("Ложе")').attr('href', buttUrl+(rifle[0].sku?rifle[0].sku.trim():""));
 			}
 			else{
 					$('.t758__wrapper').hide();
@@ -38,7 +38,10 @@ $(document).ready(
 			'КО-91/30',
 			'Соболь 22 lr',
 		        ];
-			if(rifle.length&&bendingAvaibles.indexOf(rifle[0].name)==-1)
+			
+			var riflename=rifle.length?rifle[0].name.trim():"-1";
+			
+			if(rifle.length&&bendingAvaibles.indexOf(riflename)==-1)
 			{		
 				$('.js-product')
 					.filter(function(){
@@ -79,9 +82,9 @@ $(document).ready(
 						{
 							var rifleName = getRifleName(rifle);
 
-							headerspan.text('Шаг 4. Выберите аксессуары к '+rifleName+' ' + batt[0].sku);
+							headerspan.text('Шаг 4. Выберите аксессуары к '+rifleName+' ' + batt[0].sku.trim());
 							
-							var url=dinamicUrl(batt[0].sku+'_' + color[0].sku +'_' +rifle[0].sku);
+							var url=dinamicUrl(batt[0].sku.trim()+'_' + color[0].sku.trim() +'_' +rifle[0].sku.trim());
 							
 							var defaultUrl='NoPhoto';
 							
@@ -105,17 +108,17 @@ $(document).ready(
 							loadImage(url, setImage,
 								function()
 								{
-									url = dinamicUrl(batt[0].sku+'_' + color[0].sku);
+									url = dinamicUrl(batt[0].sku.trim()+'_' + color[0].sku.trim());
 									
 									loadImage(url, setImage,
 										function()
 										{
-											url=dinamicUrl(batt[0].sku+'_' +rifle[0].sku);
+											url=dinamicUrl(batt[0].sku.trim()+'_' +rifle[0].sku.trim());
 											
 											loadImage(url, setImage,
 												function()
 												{
-													url=dinamicUrl(batt[0].sku);
+													url=dinamicUrl(batt[0].sku.trim());
 													
 													loadImage(url, setImage,
 														function()
