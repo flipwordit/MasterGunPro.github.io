@@ -40,7 +40,7 @@ $('.t-submit').click(
 			var model = getProductBySkuPrefix ('MG');
 			var color = getProductBySkuPrefix ('C');
 			
-			var productFromAmo = riple[0].name + " " + model[0].name + " " + color[0].name;
+			var productFromAmo = riple[0].name.trim() + " " + model[0].name.trim() + " " + color[0].name.trim();
 			
 			$("input[name='productNames']").val(productFromAmo);
 	});	
