@@ -45,7 +45,7 @@ var getPrefix = function(sku) {
     if (!sku)
         return null;
 
-sku=sku.trim();
+    sku=sku.trim();
     for (var i = 0; i < removePrefixes.length; i++) {
         if (sku.startsWith(removePrefixes[i]))
             return removePrefixes[i];
