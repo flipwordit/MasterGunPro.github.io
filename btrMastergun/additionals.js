@@ -18,6 +18,7 @@ $(document).ready(
 				}
 			
 			var bendingAvaibles=[
+			'Anschutz 1416 22Lr',
 			'Antonio Zoli 1900',
 			'CZ-452',
 			'CZ-455',
