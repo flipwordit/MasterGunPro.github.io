@@ -17,6 +17,8 @@ $(document).ready(
 					$('.t758__wrapper').hide();
 				}
 			
+			/* Поручение от Романа. Отображать всегда
+			//Сокрытие бендинг блока
 			var bendingAvaibles=[
 			'Anschutz 1416 22Lr',
 			'Antonio Zoli 1900',
@@ -53,6 +55,7 @@ $(document).ready(
 						})
 					.hide();
 			}
+			//*/
 			
 			var batt=getProductBySkuPrefix('MG');
 			var color=getProductBySkuPrefix('C');
