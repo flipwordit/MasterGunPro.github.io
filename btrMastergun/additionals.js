@@ -40,6 +40,7 @@ $(document).ready(
 			'ВПО-223',
 			'КО-91/30',
 			'Соболь 22 lr',
+			'тест',
 		        ];
 			
 			var riflename=rifle.length?rifle[0].name.trim():"-1";
