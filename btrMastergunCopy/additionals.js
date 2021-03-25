@@ -17,6 +17,52 @@ $(document).ready(
 					$('.t758__wrapper').hide();
 				}
 			
+			var model=getProductBySkuPrefix('MG');
+			
+			var configuration={
+				{
+					rifle:"Anschutz 1416 22Lr",
+					sku:"bending",
+					visible:false
+				},
+				{
+					rifle: "Anschutz 1416 22Lr",
+					model: "MG-08",
+					sku: "D-212",
+					price: 2400
+				}
+			};
+			
+			var configRules = configuration
+				.filter(el=>(!el.rifle||el.rifle===rifle)&&(!el.model||el.model===model));
+				
+			var hides=configRules.filter(el=>el.visible===false);
+			var setPrices=configRules.filter(el=>!!el.price);
+			
+			hides
+				.forEach(hide=>
+				{
+					$('.js-product')
+							.filter(function(){
+								
+								var sku=$(this)
+									.find('.js-product-sku')
+									.text()
+									.trim();
+									
+									var price=setPrices.find(hide=>hide.sku===sku);
+									
+									if(price)
+									{
+										$(this)
+											.find('.js-product-price')
+											.text(price.price);
+									}
+									
+								return hides.find(hide=>hide.sku===sku);
+								})
+							.hide();
+				});
 			/* Поручение от Романа. Отображать всегда
 			//Сокрытие бендинг блока
 			var bendingAvaibles=[
