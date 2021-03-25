@@ -21,20 +21,23 @@ $(document).ready(
 			
 			var configuration=[
 				{
-					rifle:"Anschutz 1416 22Lr",
-					sku:"bending",
+					rifle:"R_A1416", //Anschutz 1416 22Lr
+					sku:"D-200",//Бендирнг блок
 					visible:false
 				},
 				{
-					rifle: "Anschutz 1416 22Lr",
+					rifle: "R_A1416", //Anschutz 1416 22Lr
 					model: "MG-08",
 					sku: "D-212",
 					price: 2400
 				}
 			];
 			
+			var rifleSku=rifle[0].sku.trim();
+			var modelSku=model[0].sku.trim();
+			
 			var configRules = configuration
-				.filter(el=>(!el.rifle||el.rifle===rifle.sku)&&(!el.model||el.model===model.sku));
+				.filter(el=>(!el.rifle||el.rifle===rifleSku)&&(!el.model||el.model===modelSku));
 				
 			var hides=configRules.filter(el=>el.visible===false);
 			var setPrices=configRules.filter(el=>!!el.price);
