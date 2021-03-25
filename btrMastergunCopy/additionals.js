@@ -22,24 +22,42 @@ $(document).ready(
 			var configuration=[
 				{
 					rifle:"R_A1416", //Anschutz 1416 22Lr
-					sku:"D-200",//Бендирнг блок
-					visible:false
+					products:[
+						{
+							sku:"D-200",//Бендирнг блок
+							visible:false
+						}
+					]
 				},
 				{
 					rifle: "R_A1416", //Anschutz 1416 22Lr
 					model: "MG-08",
-					sku: "D-212",
-					price: 2400
+					products:[
+						{
+							sku:"D-212",//Бендирнг блок
+							price: 2400
+						},
+						{
+							sku:"D-200",//Бендирнг блок
+							visible:false
+						}
+					]
 				}
 			];
 			
 			var rifleSku=rifle[0].sku.trim();
 			var modelSku=model[0].sku.trim();
 			
-			var configRules = configuration
+			var productConfiguration=[];
+			
+			configuration
+				.filter(el=>el.sku)
+				.forEach(el=>productConfiguration=productConfiguration.concat(el.sku.map(sku=>Object.assign({},sku,el)));
+				
+			var configRules = productConfiguration
 				.filter(el=>(!el.rifle||el.rifle===rifleSku)&&(!el.model||el.model===modelSku));
 				
-			var hides=configRules.filter(el=>el.visible===false);
+			var hides=configRules.map(el=>{}).filter(el=>el.visible===false);
 			var setPrices=configRules.filter(el=>!!el.price);
 			
 			hides
