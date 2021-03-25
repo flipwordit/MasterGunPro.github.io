@@ -16,6 +16,11 @@ $(document).ready(
 				$('.t758__wrapper').hide();
 			}
 			
-			setTcart__addProductProduct();    
+			setTcart__addProductProduct(pr=>{
+				if(pr.sku==='MG-08')
+					location.href = nextStepUrl+"_mg-08";
+				else
+					location.href = nextStepUrl;
+			});    
 		});
     });
