@@ -51,22 +51,26 @@ $(document).ready(
 			var productConfiguration=[];
 			
 			configuration
-				.filter(el=>el.sku)
-				.forEach(el=>productConfiguration=productConfiguration.concat(el.sku.map(sku=>Object.assign({},sku,el)));
+				.filter(el=>el.products)
+				.forEach(el=>{
+					
+					var products=el.products.map(sku=>Object.assign({},sku,el));
+					
+					productConfiguration = productConfiguration.concat(products);
+				});
 				
 			var configRules = productConfiguration
 				.filter(el=>(!el.rifle||el.rifle===rifleSku)&&(!el.model||el.model===modelSku));
 				
-			var hides=configRules.map(el=>{}).filter(el=>el.visible===false);
+			var hides=configRules.filter(el=>el.visible!==undefined);
 			var setPrices=configRules.filter(el=>!!el.price);
 			
-			hides
-				.forEach(hide=>
-				{
+			
 					$('.js-product')
-							.filter(function(){
+							.each(
+								(_, el)=>{
 								
-								var sku=$(this)
+								var sku=$(el)
 									.find('.js-product-sku')
 									.text()
 									.trim();
@@ -75,15 +79,20 @@ $(document).ready(
 									
 									if(price)
 									{
-										$(this)
+										$(el)
 											.find('.js-product-price')
 											.text(price.price);
 									}
 									
-								return hides.find(hide=>hide.sku===sku);
-								})
-							.hide();
-				});
+								var hide=hides.find(hide=>hide.sku===sku);
+								
+								if(hide){
+									if(hide.visible)
+										el.show();
+									else
+										el.hide()
+								}
+							});
 			/* Поручение от Романа. Отображать всегда
 			//Сокрытие бендинг блока
 			var bendingAvaibles=[
