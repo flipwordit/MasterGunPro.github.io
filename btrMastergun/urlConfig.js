@@ -10,7 +10,7 @@ $(function() {
                     price: 0
                 });
 
-                location.href='http://mastergun.pro/selectmodel';
+                location.href = baseUrl + '/selectmodel';
 
             });
 });

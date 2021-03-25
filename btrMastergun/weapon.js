@@ -1,4 +1,4 @@
-var nextStepUrl = 'http://mastergun.pro/butts/';
+var nextStepUrl = baseUrl+ 'butts/';
 
 $(document).ready(
     function() {

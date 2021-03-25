@@ -1,4 +1,4 @@
-var buttUrl = 'http://mastergun.pro/butts/';
+var buttUrl = baseUrl + '/butts/';
 
 $(document).ready(
 	

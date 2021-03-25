@@ -1,5 +1,5 @@
-var nextStepUrl = 'http://mastergun.pro/accessory/';
-var buttUrl = 'http://mastergun.pro/butts/';
+var nextStepUrl = baseUrl + '/accessory/';
+var buttUrl = baseUrl + '/butts/';
 
 $(document).ready(
     function () {

@@ -1,3 +1,5 @@
+var baseUrl = 'http://mastergun.pro/';
+
 var loadScriptsDict = {
 		"/configurator" : [['cartConfig.js', 'urlConfig.js', 'validation.js', 'weapon.js'], ['configurator.css']],
 	"/request" : [['cartConfig.js', 'urlConfig.js', 'validation.js', 'selectedWeapon.js'], ['configurator.css']],
