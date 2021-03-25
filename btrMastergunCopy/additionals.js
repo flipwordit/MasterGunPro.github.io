@@ -19,7 +19,7 @@ $(document).ready(
 			
 			var model=getProductBySkuPrefix('MG');
 			
-			var configuration={
+			var configuration=[
 				{
 					rifle:"Anschutz 1416 22Lr",
 					sku:"bending",
@@ -31,10 +31,10 @@ $(document).ready(
 					sku: "D-212",
 					price: 2400
 				}
-			};
+			];
 			
 			var configRules = configuration
-				.filter(el=>(!el.rifle||el.rifle===rifle)&&(!el.model||el.model===model));
+				.filter(el=>(!el.rifle||el.rifle===rifle.sku)&&(!el.model||el.model===model.sku));
 				
 			var hides=configRules.filter(el=>el.visible===false);
 			var setPrices=configRules.filter(el=>!!el.price);
