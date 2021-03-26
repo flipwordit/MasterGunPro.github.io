@@ -133,6 +133,8 @@ $(document).ready(
 			}
 			//*/
 			
+			//Отображение фото под оружие, ложе, цвет
+			/*
 			var batt=getProductBySkuPrefix('MG');
 			var color=getProductBySkuPrefix('C');
 				
@@ -214,5 +216,6 @@ $(document).ready(
 						}
 					}
 				}
+				*/
 		});
     });
