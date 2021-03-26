@@ -24,7 +24,7 @@ $(document).ready(
 					rifle:"R_A1416", //Anschutz 1416 22Lr
 					products:[
 						{
-							sku:"D-200",//Бендирнг блок
+							sku:"D-203",//Бендирнг блок
 							visible:false
 						}
 					]
@@ -38,7 +38,7 @@ $(document).ready(
 							price: 2400
 						},
 						{
-							sku:"D-200",//Бендирнг блок
+							sku:"D-203",//Бендирнг блок
 							visible:false
 						}
 					]
@@ -88,9 +88,9 @@ $(document).ready(
 								
 								if(hide){
 									if(hide.visible)
-										el.show();
+										$(el).show();
 									else
-										el.hide()
+										$(el).hide()
 								}
 							});
 			/* Поручение от Романа. Отображать всегда
