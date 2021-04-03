@@ -1,4 +1,4 @@
-var setTcart__addProductProduct = function(afterAddProductFunc) {
+var setTcart__addProductProduct = function (afterAddProductFunc, removePredicate) {
 
     if (!oldtcart__addProduct) {
 
@@ -7,9 +7,12 @@ var setTcart__addProductProduct = function(afterAddProductFunc) {
         tcart__addProduct = function (n) {
 
             var currentPrefix = getPrefix(n.sku);
-            var removePredicate = function (a) {
-                return currentPrefix == getPrefix(a.sku);
-            };
+
+            if (!removePredicate) {
+	            removePredicate = function(a) {
+		            return currentPrefix == getPrefix(a.sku);
+	            };
+            }
 
             if (currentPrefix != null &&
                 window.tcart.products.filter(removePredicate).length) {
