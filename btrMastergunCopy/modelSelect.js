@@ -1,5 +1,5 @@
-var nextStepUrl = baseUrl + '/selectcolor';
-var buttUrl = baseUrl + '/butts/';
+var nextStepUrl = baseUrl + 'selectcolor';
+var buttUrl = baseUrl + 'butts/';
 
 $(document).ready(
     function() {

@@ -67,7 +67,7 @@ $(document).ready(
 					]
 				},
 				{
-					model: "MG_03",
+					model: "MG-03",
 					products: [
 						{
 							sku: "D_115", //Комплект кожаных встравок
@@ -82,7 +82,7 @@ $(document).ready(
 					]
 				},
 				{
-					model: "MG_08",
+					model: "MG-08",
 					products: [
 						{
 							sku: "D_820",//Магазин стандарта AICS 5 местный
