@@ -4,7 +4,7 @@ var buttUrl = baseUrl + 'butts/';
 $(document).ready(
     function() {
 		
-		executeIfHas(['getProductBySkuPrefix', 'setTcart__addProductProduct'],
+		executeIfHas(['tcart', 'getProductBySkuPrefix', 'setTcart__addProductProduct'],
 		function(){
 		
 			var rifle = getProductBySkuPrefix('R');

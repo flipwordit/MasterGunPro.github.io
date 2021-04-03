@@ -3,7 +3,7 @@ var buttUrl = baseUrl + '/butts/';
 
 $(document).ready(
     function () {
-		executeIfHas(['getProductBySkuPrefix', 'getRifleName', 'dinamicUrl', 'setTcart__addProductProduct'], function(){
+		executeIfHas(['tcart', 'getProductBySkuPrefix', 'getRifleName', 'dinamicUrl', 'setTcart__addProductProduct'], function(){
 			var rifle = getProductBySkuPrefix('R');
 			
 			if(rifle.length > 0){	 

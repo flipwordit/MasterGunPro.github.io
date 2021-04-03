@@ -4,7 +4,7 @@ var buttUrl = baseUrl + '/butts/';
 
 $(document).ready(
     function () {
-		executeIfHas(['getProductBySkuPrefix', 'setTcart__addProductProduct', 'getRifleName'],function(){
+		executeIfHas(['tcart', 'getProductBySkuPrefix', 'setTcart__addProductProduct', 'getRifleName'],function(){
 			var rifle = getProductBySkuPrefix('R');
 			if(rifle && rifle.length){	 
 				$('a:contains("Ложе")').attr('href', buttUrl+rifle[0].sku.trim());

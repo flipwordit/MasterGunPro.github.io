@@ -3,7 +3,7 @@ var buttUrl = baseUrl + '/butts/';
 $(document).ready(
 	
     function () {
-		executeIfHas(['getProductBySkuPrefix', 'dinamicUrl'], function(){
+		executeIfHas(['tcart', 'getProductBySkuPrefix', 'dinamicUrl'], function(){
 	
 			$('[href = "#opencart"]').click(function() {
 					$(".t706__carticon")[0].click();
