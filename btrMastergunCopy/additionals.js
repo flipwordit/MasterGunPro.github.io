@@ -21,6 +21,7 @@ $(document).ready(
 				var configuration = [
 					{
 						products: [
+							//Общие аксессуары
 							{ sku: "D_108", price: "1500" },
 							{ sku: "D_102", price: "4500" },
 							{ sku: "D_109", price: "1200" },
@@ -36,6 +37,8 @@ $(document).ready(
 							{ sku: "D_110", price: "3500" },
 							{ sku: "D_001", price: "2100" },
 							{ sku: "D_002", price: "3200" },
+							
+							//Аксессуары отображающиеся по условию
 							{ sku: "D_114", visible: false }, //Шасси
 							{ sku: "D_115", visible: false }, //Комплект кожаных встравок
 							{ sku: "D_315", visible: false }, //Шильдик на гребень
