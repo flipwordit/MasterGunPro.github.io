@@ -134,8 +134,9 @@ $(document).ready(
 								.find('.js-product-sku')
 								.text()
 								.trim();
-
-							var productConfig = configRules.find(hide => hide.sku === sku);
+							var sku1 = sku.replace("_", "-");
+							var sku2 = sku.replace("-", "_");
+							var productConfig = configRules.find(hide => hide.sku === sku1 || hide.sku === sku2);
 
 							if (productConfig) {
 								if (productConfig.price) {
