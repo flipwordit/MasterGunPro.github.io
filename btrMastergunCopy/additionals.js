@@ -123,7 +123,8 @@ $(document).ready(
 				});
 				
 			var configRules = productConfiguration
-				.filter(el=>(!el.rifle||el.rifle===rifleSku)&&(!el.model||el.model===modelSku));
+				.filter(el => (!el.rifle || el.rifle === rifleSku) && (!el.model || el.model === modelSku))
+				.reverse();
 				
 			var hides=configRules.filter(el=>el.visible!==undefined);
 			var setPrices=configRules.filter(el=>!!el.price);
