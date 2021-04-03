@@ -17,6 +17,6 @@ $(document).ready(
 
 				setTcart__addProductProduct(
 					product => location.href = product.sku === 'MG-08' ? (nextStepUrl + "_mg_08") : nextStepUrl,
-					(p) => !p.sku && p.sku[0] != "R");
+					(p) => !p.sku || p.sku[0] != "R");
 			});
 	});
