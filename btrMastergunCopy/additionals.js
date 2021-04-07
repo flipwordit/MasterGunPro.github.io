@@ -87,6 +87,10 @@ var configuration = [
 				price: 7500
 			},
 		]
+	},//Sauer 202, ВПО-208, ВПО-212, ВПО-221, МР-18, СКС, сок-94, сок -95
+	{
+		rifle: "R_S_101",
+		products: [{sku: "D_101", /*Беддинг блок*/visible: false}]
 	},
 ];
 
