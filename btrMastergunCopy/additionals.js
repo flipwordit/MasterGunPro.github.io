@@ -87,9 +87,37 @@ var configuration = [
 				price: 7500
 			},
 		]
-	},//Sauer 202, ВПО-208, ВПО-212, ВПО-221, МР-18, СКС, сок-94, сок -95
+	},
 	{
-		rifle: "R_S_202",
+		rifle: "R_S-202",//Sauer 202
+		products: [{sku: "D_101", /*Беддинг блок*/visible: false}]
+	},
+	{
+		rifle: "R_VPO-208",//ВПО-208
+		products: [{sku: "D_101", /*Беддинг блок*/visible: false}]
+	},
+	{
+		rifle: "R_V212",//ВПО-212
+		products: [{sku: "D_101", /*Беддинг блок*/visible: false}]
+	},
+	{
+		rifle: "R_VPO-221",//ВПО-221
+		products: [{sku: "D_101", /*Беддинг блок*/visible: false}]
+	},
+	{
+		rifle: "R_MP-18",//МР-18
+		products: [{sku: "D_101", /*Беддинг блок*/visible: false}]
+	},
+	{
+		rifle: "R_CKC",//СКС
+		products: [{sku: "D_101", /*Беддинг блок*/visible: false}]
+	},
+	{
+		rifle: "R_COK-94",//сок-94
+		products: [{sku: "D_101", /*Беддинг блок*/visible: false}]
+	},
+	{
+		rifle: "R_COK-95",//сок -95
 		products: [{sku: "D_101", /*Беддинг блок*/visible: false}]
 	},
 ];
