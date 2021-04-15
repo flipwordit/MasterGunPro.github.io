@@ -26,7 +26,7 @@ $(document).ready(
 
 				var headerSpan =
 					$('.t030')
-						.find('span')
+						.find('*')
 						.filter(function() {
 							return $(this).text().indexOf('Шаг 2') != -1;
 						});
