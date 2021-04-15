@@ -49,7 +49,22 @@ var configuration = [
 		]
 	},
 	{
-		model: "MG-03",
+		model: "MG_03_Hunter",
+		products: [
+			{
+				sku: "D_115", //Комплект кожаных встравок
+				visible: true,
+				price: 6000
+			},
+			{
+				sku: "D_315", //Шильдик на гребень
+				visible: true,
+				price: 2700
+			},
+		]
+	},
+	{
+		model: "MG_03_Light",
 		products: [
 			{
 				sku: "D_115", //Комплект кожаных встравок
