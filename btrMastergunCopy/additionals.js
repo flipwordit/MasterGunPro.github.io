@@ -120,6 +120,43 @@ var configuration = [
 				visible: true,
 				price: 7500
 			},
+			//hide
+			{
+				sku: "D_002", //Комплект лазерной насечки
+				visible: false
+			},
+			{
+				sku: "D_105", //Быстросъемные антабки QD
+				visible: false,
+			},
+			{
+				sku: "D_107", //Быстросъемные антабки
+				visible: false,
+			},
+			{
+				sku: "D_106", //Крепление для антабок
+				visible: false,
+			},
+			{
+				sku: "D_001", //Защитное антискользящее покрытие
+				visible: false,
+			},
+			{
+				sku: "D_110", //Регулируемый по длине приклад
+				visible: false,
+			},
+			{
+				sku: "D_103", //Рельсовый интерфейс M-LOK
+				visible: false,
+			},
+			{
+				sku: "D_101", //Беддинг блок 
+				visible: false,
+			},
+			{
+				sku: "D_104", //Втулки крепления ресивера
+				visible: false
+			},
 		]
 	},
 	{
