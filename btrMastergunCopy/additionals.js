@@ -49,6 +49,24 @@ var configuration = [
 		]
 	},
 	{
+		model: "MG_02_Light",
+		products: [
+			{
+				sku: "D_110", //Регулируемый по длине приклад
+				visible: false
+			}
+		]
+	},
+	{
+		model: "MG_02_Hunter",
+		products: [
+			{
+				sku: "D_110", //Регулируемый по длине приклад
+				visible: false
+			}
+		]
+	},
+	{
 		model: "MG_03_Hunter",
 		products: [
 			{
