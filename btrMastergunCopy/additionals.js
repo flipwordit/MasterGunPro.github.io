@@ -17,6 +17,7 @@ var configuration = [
 			{ sku: "D_110", price: "3500" },
 			{ sku: "D_001", price: "2100" },
 			{ sku: "D_002", price: "3200" },
+			{ sku: "D_819", price: "1200" },
 
 			//Аксессуары отображающиеся по условию
 			{ sku: "D_114", visible: false }, //Шасси
