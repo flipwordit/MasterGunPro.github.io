@@ -26,10 +26,11 @@ $(document).ready(
 
 				var headerSpan =
 					$('.t030')
-						.find('span')
+						.find('*')
 						.filter(function() {
 							return $(this).text().indexOf('Шаг 2') != -1;
-						});
+						})
+						.last();
 
 				if (rifle && rifle.length) {
 					var rifleName = getRifleName(rifle).trim()

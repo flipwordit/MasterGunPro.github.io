@@ -9,7 +9,7 @@ var configuration = [
 			{ sku: "D_111", price: "10700" },
 			{ sku: "D_112", price: "3500" },
 			{ sku: "D_113", price: "5500" },
-			{ sku: "D_101", price: "7000" },
+			{ sku: "D_101", price: "6000" },
 			{ sku: "D_103", price: "2700" },
 			{ sku: "D_104", price: "2000" },
 			{ sku: "D_106", price: "900" },
@@ -17,6 +17,7 @@ var configuration = [
 			{ sku: "D_110", price: "3500" },
 			{ sku: "D_001", price: "2100" },
 			{ sku: "D_002", price: "3200" },
+			{ sku: "D_819", price: "1200" },
 
 			//Аксессуары отображающиеся по условию
 			{ sku: "D_114", visible: false }, //Шасси
@@ -49,7 +50,40 @@ var configuration = [
 		]
 	},
 	{
-		model: "MG-03",
+		model: "MG_02_Light",
+		products: [
+			{
+				sku: "D_110", //Регулируемый по длине приклад
+				visible: false
+			}
+		]
+	},
+	{
+		model: "MG_02_Hunter",
+		products: [
+			{
+				sku: "D_110", //Регулируемый по длине приклад
+				visible: false
+			}
+		]
+	},
+	{
+		model: "MG_03_Hunter",
+		products: [			
+			{
+				sku: "D_115", //Комплект кожаных встравок
+				visible: true,
+				price: 6000
+			},
+			{
+				sku: "D_315", //Шильдик на гребень
+				visible: true,
+				price: 2700
+			},
+		]
+	},
+	{
+		model: "MG_03_Light",
 		products: [
 			{
 				sku: "D_115", //Комплект кожаных встравок
@@ -64,7 +98,25 @@ var configuration = [
 		]
 	},
 	{
-		model: "MG-08",
+		model: "MG_04_Hunter",
+		products: [			
+			{
+				sku: "D_110", //Регулируемый по длине приклад
+				visible: false
+			},
+		]
+	},
+	{
+		model: "MG_04_Sport",
+		products: [			
+			{
+				sku: "D_110", //Регулируемый по длине приклад
+				visible: false
+			},
+		]
+	},
+	{
+		model: "MG_08",
 		products: [
 			{
 				sku: "D_820", //Магазин стандарта AICS 5 местный
@@ -86,7 +138,76 @@ var configuration = [
 				visible: true,
 				price: 7500
 			},
+			//hide
+			{
+				sku: "D_002", //Комплект лазерной насечки
+				visible: false
+			},
+			{
+				sku: "D_105", //Быстросъемные антабки QD
+				visible: false,
+			},
+			{
+				sku: "D_107", //Быстросъемные антабки
+				visible: false,
+			},
+			{
+				sku: "D_106", //Крепление для антабок
+				visible: false,
+			},
+			{
+				sku: "D_001", //Защитное антискользящее покрытие
+				visible: false,
+			},
+			{
+				sku: "D_110", //Регулируемый по длине приклад
+				visible: false,
+			},
+			{
+				sku: "D_103", //Рельсовый интерфейс M-LOK
+				visible: false,
+			},
+			{
+				sku: "D_101", //Беддинг блок 
+				visible: false,
+			},
+			{
+				sku: "D_104", //Втулки крепления ресивера
+				visible: false
+			},
 		]
+	},
+	{
+		rifle: "R_S-202",//Sauer 202
+		products: [{sku: "D_101", /*Беддинг блок*/visible: false}]
+	},
+	{
+		rifle: "R_VPO-208",//ВПО-208
+		products: [{sku: "D_101", /*Беддинг блок*/visible: false}]
+	},
+	{
+		rifle: "R_V212",//ВПО-212
+		products: [{sku: "D_101", /*Беддинг блок*/visible: false}]
+	},
+	{
+		rifle: "R_VPO-221",//ВПО-221
+		products: [{sku: "D_101", /*Беддинг блок*/visible: false}]
+	},
+	{
+		rifle: "R_MP-18",//МР-18
+		products: [{sku: "D_101", /*Беддинг блок*/visible: false}]
+	},
+	{
+		rifle: "R_CKC",//СКС
+		products: [{sku: "D_101", /*Беддинг блок*/visible: false}]
+	},
+	{
+		rifle: "R_COK-94",//сок-94
+		products: [{sku: "D_101", /*Беддинг блок*/visible: false}]
+	},
+	{
+		rifle: "R_COK-95",//сок -95
+		products: [{sku: "D_101", /*Беддинг блок*/visible: false}]
 	},
 ];
 
