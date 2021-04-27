@@ -71,6 +71,10 @@ var configuration = [
 		model: "MG_03_Hunter",
 		products: [
 			{
+				sku:"D_110",//Регулируемый по длине приклад
+				visible: false
+			},
+			{
 				sku: "D_115", //Комплект кожаных встравок
 				visible: true,
 				price: 6000
@@ -85,6 +89,10 @@ var configuration = [
 	{
 		model: "MG_03_Light",
 		products: [
+			{
+				sku:"D_110",//Регулируемый по длине приклад
+				visible: false
+			},
 			{
 				sku: "D_115", //Комплект кожаных встравок
 				visible: true,
