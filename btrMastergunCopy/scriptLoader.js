@@ -6,9 +6,8 @@ var loadScriptsDict = {
 		"/butts" : [['cartConfig.js', 'validation.js', 'grip.js'], []],
 		"/model_" : [['cartConfig.js', 'validation.js', 'modelPriceUpdate.js', 'modelSelect.js'], []],
 		"/selectcolor" : [['cartConfig.js', 'validation.js', 'imgConfig.js', 'urlConfig.js', 'color.js'], []],
-		"/accessory" : [['cartConfig.js', 'imgConfig.js', 'validation.js', 'urlConfig.js', 'additionals.js'], []],
-	"/accessory/d_" : [['cartConfig.js', 'imgConfig.js', 'validation.js', 'urlConfig.js', 'additionals.js', 'additional_details.js'], []]
-	
+		"/accessory/d_" : [['cartConfig.js', 'imgConfig.js', 'validation.js', 'urlConfig.js', 'additionals.js', 'additional_details.js'], []],
+		"/accessory" : [['cartConfig.js', 'imgConfig.js', 'validation.js', 'urlConfig.js', 'additionals.js'], []],	
 	};
 
 var loadAll = function(loadingAll){
