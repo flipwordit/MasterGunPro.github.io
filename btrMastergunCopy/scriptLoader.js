@@ -7,7 +7,7 @@ var loadScriptsDict = {
 		"/model_" : [['cartConfig.js', 'validation.js', 'modelPriceUpdate.js', 'modelSelect.js'], []],
 		"/selectcolor" : [['cartConfig.js', 'validation.js', 'imgConfig.js', 'urlConfig.js', 'color.js'], []],
 		"/accessory" : [['cartConfig.js', 'imgConfig.js', 'validation.js', 'urlConfig.js', 'additionals.js'], []],
-	"/accessory/D_" : [['cartConfig.js', 'imgConfig.js', 'validation.js', 'urlConfig.js', 'additionals.js', 'additional_details.js'], []]
+	"/accessory/d_" : [['cartConfig.js', 'imgConfig.js', 'validation.js', 'urlConfig.js', 'additionals.js', 'additional_details.js'], []]
 	
 	};
 
