@@ -3,7 +3,7 @@ var buttUrl = baseUrl + 'butts/';
 
 $(document).ready(
     function () {
-		executeIfHas(['tcart', 'getProductBySkuPrefix', 'getRifleName', 'dinamicUrl', 'setTcart__addProductProduct'], function(){
+		executeIfHas(['tcart', 'getProductBySkuPrefix', 'getRifleName', 'dynamicUrl', 'setTcart__addProductProduct'], function(){
 			var rifle = getProductBySkuPrefix('R');
 			
 			if(rifle.length > 0){	 
@@ -43,7 +43,7 @@ $(document).ready(
 							fotoDiv.attr('data-img-zoom-url',url);
 						};
 						
-						var url = dinamicUrl(batt[0].sku.trim()+'_' +rifle[0].sku.trim());
+						var url = dynamicUrl(batt[0].sku.trim()+'_' +rifle[0].sku.trim());
 						
 						var loadImage=function(url, success, error)
 						{
@@ -57,12 +57,12 @@ $(document).ready(
 							function()
 							{
 					
-								url = dinamicUrl(batt[0].sku.trim());
+								url = dynamicUrl(batt[0].sku.trim());
 								
 								loadImage(url, setImage,
 									function()
 									{
-										url=dinamicUrl(defaultUrl);
+										url=dynamicUrl(defaultUrl);
 										setImage();
 									});
 							});	

@@ -225,7 +225,7 @@ var buttUrl = baseUrl + '/butts/';
 
 $(document).ready(
 	function() {
-		executeIfHas(['tcart', 'getProductBySkuPrefix', 'dinamicUrl'],
+		executeIfHas(['tcart', 'getProductBySkuPrefix', 'dynamicUrl'],
 			function() {
 
 				$('[href = "#opencart"]').click(function() {
@@ -285,7 +285,7 @@ $(document).ready(
 								if(productConfig.url){
 									$(el)
 										.find('.js-product-img')
-										.css('background-image', 'url("'+dynamicUrl(productConfig.url)+'")');
+										.css('background-image', "url('"+dynamicUrl(productConfig.url)+"')");
 									$(el).show();
 								}
 							}
