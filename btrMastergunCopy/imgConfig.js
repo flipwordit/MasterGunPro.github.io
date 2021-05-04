@@ -1,4 +1,4 @@
-var dinamicUrl = function(photoName){
+var dynamicUrl = function(photoName){
 	
 	var baseUrl='';
 	
