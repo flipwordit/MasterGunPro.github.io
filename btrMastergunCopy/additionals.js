@@ -54,7 +54,8 @@ var configuration = [
 		products: [
 			{
 				sku: "D_002", //Комплект лазерной насечки
-				url: "modelPhotos/MG-01.png"
+				url: "modelPhotos/MG-01.png",
+				price: 3200
 			}
 		]
 	},
@@ -283,9 +284,12 @@ $(document).ready(
 								}
 								
 								if(productConfig.url){
+									var url=dynamicUrl(productConfig.url);
+									
 									$(el)
 										.find('.js-product-img')
-										.css('background-image', "url('"+dynamicUrl(productConfig.url)+"')");
+										.css('background-image', "url('"+url+"')")
+										.attr('data-original', url);
 									$(el).show();
 								}
 							}
