@@ -10,7 +10,7 @@ $(document).ready(
 				location.href = nextStepUrl+batt[0].sku.trim();
 			};
 			
-			setTcart__addProductProduct(afterAddProductFunc);
+			setTcart__addProductProduct(afterAddProductFunc, ()=> false);
 		});
 
     });
