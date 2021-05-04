@@ -13,5 +13,5 @@ var dinamicUrl = function(photoName){
 	
 	baseUrl += '://raw.githubusercontent.com/MasterGunPro/MasterGunPro.github.io/master/modelPhotos/';
 	
-	return url = baseUrl + photoName.replaceAll(' ', '') + '.png';
+	return url = baseUrl + photoName.replaceAll(' ', '');
 }

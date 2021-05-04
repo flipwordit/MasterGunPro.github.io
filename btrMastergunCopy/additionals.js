@@ -50,6 +50,15 @@ var configuration = [
 		]
 	},
 	{
+		model: "MG_01_Light",
+		products: [
+			{
+				sku: "D_002", //Комплект лазерной насечки
+				url: "modelPhotos/MG-01.png"
+			}
+		]
+	},
+	{
 		model: "MG_02_Light",
 		products: [
 			{
@@ -271,6 +280,13 @@ $(document).ready(
 									$(el).show();
 								} else if (productConfig.visible === false) {
 									$(el).hide()
+								}
+								
+								if(productConfig.url){
+									$(el)
+										.find('.js-product-img')
+										.css('background-image', 'url("'+dynamicUrl(productConfig.url)+'")');
+									$(el).show();
 								}
 							}
 						});
