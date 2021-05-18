@@ -294,8 +294,16 @@ $(document).ready(
 								}
 							}
 						});
-
+				
 				t744_init('299156320');
+			
+				$('.js-product-img')
+				.each((i, el)=>
+				{
+					var backgroundUrl=$(el).css('background-image');
+					if(backgroundUrl.indexOf('-/resizeb/20x')!==-1)
+						$(el).css('background-image', 'url('+$(el).attr('data-original')+')');
+				});
 
 			});
 	});
