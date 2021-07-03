@@ -30,7 +30,6 @@ var configuration = [
 			{ sku: "D_823", visible: false }, //Магазин стандарта AICs 12 местный
 			{ sku: "D_003", visible: false }, //Комплект лазерной насечки (МГ-03)
 			{ sku: "D_004", visible: false }, //Комплект лазерной насечки (МГ-05)
-			
 		]
 	},
 	{
