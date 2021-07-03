@@ -91,7 +91,12 @@ var configuration = [
 	},
 	{
 		model: "MG_03_Hunter",
-		products: [			
+		products: [
+			{
+				sku: "D_110", //Регулируемый по длине приклад
+				url: "MG-03_D_110_mastergun.png",
+				price: 4500
+			},
 			{
 				sku: "D_115", //Комплект кожаных встравок
 				visible: true,
@@ -107,6 +112,11 @@ var configuration = [
 	{
 		model: "MG_03_Light",
 		products: [
+			{
+				sku: "D_110", //Регулируемый по длине приклад
+				url: "MG-03_D_110_mastergun.png",
+				price: 4500
+			},
 			{
 				sku: "D_115", //Комплект кожаных встравок
 				visible: true,
@@ -144,7 +154,12 @@ var configuration = [
 	},
 	{
 		model: "MG_05",
-		products: [			
+		products: [
+			{
+				sku: "D_110", //Регулируемый по длине приклад
+				url: "MG-05_D_110_mastergun.png",
+				price: 4500
+			},
 			{
 				sku: "D_004", //Комплект лазерной насечки (МГ-05)
 				url: "MG-05_D_004_mastergun_pro1.png",
