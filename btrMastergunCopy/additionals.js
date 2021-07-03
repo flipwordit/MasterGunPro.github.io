@@ -28,6 +28,9 @@ var configuration = [
 			{ sku: "D_821", visible: false }, //Магазин стандарта AICS 8 местный
 			{ sku: "D_822", visible: false }, //Магазин стандарта AICs 10 местный
 			{ sku: "D_823", visible: false }, //Магазин стандарта AICs 12 местный
+			{ sku: "D_003", visible: false }, //Комплект лазерной насечки (МГ-03)
+			{ sku: "D_004", visible: false }, //Комплект лазерной насечки (МГ-05)
+			
 		]
 	},
 	{
@@ -139,7 +142,7 @@ var configuration = [
 				url: "MG-05_D_004_mastergun_pro1.png",
 				price: 3200
 			},
-			},
+		]
 	},
 	{
 		model: "MG_08",
