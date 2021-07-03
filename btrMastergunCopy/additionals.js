@@ -155,6 +155,14 @@ var configuration = [
 				visible: false
 			},
 			{
+				sku: "D_003", //Комплект лазерной насечки
+				visible: false
+			},
+			{
+				sku: "D_004", //Комплект лазерной насечки
+				visible: false
+			},
+			{
 				sku: "D_105", //Быстросъемные антабки QD
 				visible: false,
 			},
