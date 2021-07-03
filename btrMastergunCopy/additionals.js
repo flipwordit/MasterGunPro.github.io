@@ -20,7 +20,8 @@ var configuration = [
 			{ sku: "D_819", price: "1200" },
 
 			//Аксессуары отображающиеся по условию
-			{ sku: "D_114", visible: false }, //Шасси
+			{ sku: "D_114", visible: false }, //Шасси Blaser R93
+			{ sku: "D_116", visible: false }, //Шасси Blaser R8
 			{ sku: "D_115", visible: false }, //Комплект кожаных встравок
 			{ sku: "D_315", visible: false }, //Шильдик на гребень
 			{ sku: "D_820", visible: false }, //Магазин стандарта AICS 5 местный
@@ -43,7 +44,7 @@ var configuration = [
 		rifle: "R_BR8",
 		products: [
 			{
-				sku: "D_114", //Шасси
+				sku: "D_116", //Шасси
 				visible: true,
 				price: 65000
 			},
