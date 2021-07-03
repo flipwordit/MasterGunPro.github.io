@@ -54,7 +54,7 @@ var configuration = [
 		products: [
 			{
 				sku: "D_002", //Комплект лазерной насечки
-				url: "modelPhotos/MG-01.png",
+				//url: "modelPhotos/MG-01.png",
 				price: 3200
 			}
 		]
