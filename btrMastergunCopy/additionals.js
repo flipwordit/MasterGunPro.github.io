@@ -57,7 +57,7 @@ var configuration = [
 		products: [
 			{
 				sku: "D_002", //Комплект лазерной насечки
-				url: "MG-01_D_002_mastergun_pro1.png",
+				url: "modelPhotos/MG-01_D_002_mastergun_pro1.png",
 				price: 3200
 			},
 			{
@@ -104,7 +104,7 @@ var configuration = [
 			},
 			{
 				sku: "D_110", //Регулируемый по длине приклад
-				url: "MG-03_D_110_mastergun.png",
+				url: "modelPhotos/MG-03_D_110_mastergun.png",
 				price: 4500
 			},
 		]
@@ -124,12 +124,12 @@ var configuration = [
 			},
 			{
 				sku: "D_003", //Комплект лазерной насечки (МГ-03)
-				url: "MG-03_D_003_mastergun_pro1.png",
+				url: "modelPhotos/MG-03_D_003_mastergun_pro1.png",
 				price: 3200
 			},
 			{
 				sku: "D_110", //Регулируемый по длине приклад
-				url: "MG-03_D_110_mastergun.png",
+				url: "modelPhotos/MG-03_D_110_mastergun.png",
 				price: 4500
 			},
 		]
@@ -157,7 +157,7 @@ var configuration = [
 		products: [
 			{
 				sku: "D_004", //Комплект лазерной насечки (МГ-05)
-				url: "MG-05_D_004_mastergun_pro1.png",
+				url: "modelPhotos/MG-05_D_004_mastergun_pro1.png",
 				price: 3200
 			},
 			{
@@ -170,7 +170,7 @@ var configuration = [
 			},
 			{
 				sku: "D_110", //Регулируемый по длине приклад
-				url: "MG-05_D_110_mastergun.png",
+				url: "modelPhotos/MG-05_D_110_mastergun.png",
 				price: 4500
 			},
 		]
