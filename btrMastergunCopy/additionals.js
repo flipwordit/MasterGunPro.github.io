@@ -68,7 +68,7 @@ var configuration = [
 				sku: "D_004", //Комплект лазерной насечки (МГ-05)
 				visible: false
 			},
-			}
+			
 		]
 	},
 	{
