@@ -57,7 +57,7 @@ var configuration = [
 		products: [
 			{
 				sku: "D_002", //Комплект лазерной насечки
-				url: "modelPhotos/MG-01_D_002_mastergun_pro1.png",
+				//url: "modelPhotos/MG-01_D_002_mastergun_pro1.png",
 				price: 3200
 			},
 			{
