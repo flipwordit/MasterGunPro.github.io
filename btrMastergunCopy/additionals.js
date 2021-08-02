@@ -140,7 +140,16 @@ var configuration = [
 	},
 	{
 		model: "MG_04_Hunter",
-		products: [			
+		products: [
+			{
+				sku: "D_002", //Комплект лазерной насечки (МГ-03)
+				visible: false
+			},
+			{
+				sku: "D_003", //Комплект лазерной насечки (МГ-03)
+				url: "modelPhotos/MG-03_D_003_mastergun_pro1.png",
+				price: 3200
+			},
 			{
 				sku: "D_110", //Регулируемый по длине приклад
 				visible: false
