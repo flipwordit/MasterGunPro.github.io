@@ -377,6 +377,8 @@ $(document).ready(
 				});
 				
 				//Подгрузка всех изображений из галерей
-				$(".t-bgimg[data-original]").each((i, el)=>$(el).css('background-image','url('+$(el).attr('data-original')+')'));
+				setTimeout(()=>
+					$(".t-bgimg[data-original]").each((i, el)=>$(el).css('background-image','url('+$(el).attr('data-original')+')')),
+					100);
 			});
 	});
